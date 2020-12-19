@@ -1,3 +1,46 @@
 \section{Příklad 3}
 % Jako parametr zadejte skupinu (A-H)
 \tretiZadani{E}
+
+
+
+\vspace*{1cm}
+
+\begin{multicols}{2}
+\let\clearpage\relax
+
+\noindent Přepočítám napěťový zdroj na zdroj proudový. \\
+Dostanu obvod: \hspace*{0.5cm} \vspace*{-0.82cm} $\xrightarrow{\hspace*{4.5cm}}$ \\
+\vspace*{0.4cm} \\ \\
+
+
+\centering
+\columnbreak
+
+\vspace*{0.3cm}
+
+%%% 1. obvod %%%
+\ctikzset{bipoles/length=1cm, bipoles/thickness = 1}
+\begin{circuitikz}[scale=0.75, line width = 0.75pt]
+\draw
+(0,0) -- (0,1.1) to node[circle, draw=black, inner sep=5pt, midway]{} (0,1.5) to node[circle, draw=black, inner sep=5pt, midway]{} (0,1.9) -- (0,3);
+\draw [-latex] (-0.55,1) to (-0.55,2);
+\draw (-0.4,1.4) node[label={[font=\footnotesize]left:$I_3$}]{};
+%\draw[line width=0.7pt,<-] (-0.4,1) arc (-30:30:1);
+\draw
+(0,3) to node[circle, fill, inner sep=1.5pt, at end]{} (1.5,3)
+to [resistor, l= $G_1$] (1.5,0) to node[circle, fill, inner sep=1.5pt, at start]{} (0,0)
+(1.5,3) to node[circle, fill, inner sep=1.5pt, at end, label={[font=\footnotesize]above:A}]{} (3,3)
+to [resistor, l= $G_2$] (3,0) to node[circle, fill, inner sep=1.5pt, at start]{} (1.5,0)
+(3,0) to [resistor, l= $G_4$] node[circle, fill, inner sep=1.5pt, at end]{} (7,0);
+\draw (7.5,0) node[label={[font=\footnotesize]below:C}]{};
+\draw (3,0) -- (3,-1) -- (4.55,-1) to node[circle, draw=black, inner sep=5pt, midway]{} (5,-1) to node[circle, draw=black, inner sep=5pt, midway]{} (5.45,-1) -- (7,-1) -- (7,0)
+;
+\end{circuitikz}
+\end{multicols}
+\let\clearpage\relax
+
+\noindent Poté už stačí pouze dosadit do vzorce: $I_{R3} = \frac{u_i}{R_3+R_i} = \frac{36,0476}{620+172,0952} = \SI{0,045509}{\ampere} = \underline{\underline{\SI{45,509}{\milli\ampere}}}$ \\
+Z toho pak: $U_{R3} = I_{R3}*R_3 = 0,045509*620 = \underline{\underline{\SI{28,216}{\volt}}}$ \\
+
+\clearpage

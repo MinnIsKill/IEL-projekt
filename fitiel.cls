@@ -40,8 +40,12 @@
 % práce s přechodem mezi více- a jedno-sloupcovým módem
 \usepackage{multicol}
 
+%pomocné
+\usepackage[screen,nopanel]{pdfscreen}
+
 % kreslení obvodů 
 \usepackage[european,straightvoltages,betterproportions,EFvoltages]{circuitikz}
+\usetikzlibrary{arrows}
 
 % jednotky
 \usepackage{siunitx}
