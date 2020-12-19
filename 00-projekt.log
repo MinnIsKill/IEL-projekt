@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.8)  18 DEC 2020 23:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.10.8)  19 DEC 2020 15:14
 entering extended mode
 **./00-projekt.tex
 (00-projekt.tex
@@ -1328,20 +1328,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--15
+Underfull \hbox (badness 10000) in paragraph at lines 12--19
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 12--15
+Underfull \hbox (badness 10000) in paragraph at lines 12--19
 
  []
 
 \realshift=\dimen361
 \realshift=\dimen362
 \realshift=\dimen363
+\realshift=\dimen364
+\realshift=\dimen365
 
-Underfull \hbox (badness 10000) in paragraph at lines 43--45
+Overfull \hbox (1.30879pt too wide) in paragraph at lines 59--60
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--70
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--90
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--111
+
+ []
+
+
+Package pdfscreen Warning: No overlay specified
+(pdfscreen)                output will have only background color on input line
+ 111.
+
+
+Package xcolor Warning: Incompatible color definition on input line 111.
+
+[4 <./fig/Pr3.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 112--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 112--129
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
@@ -1354,7 +1409,7 @@ Package pdfscreen Warning: No overlay specified
 
 Package xcolor Warning: Incompatible color definition on input line 27.
 
-[4 <./fig/Pr3.pdf>] (04-pr4.tex
+[5] (04-pr4.tex
 
 Package xcolor Warning: Incompatible color definition on input line 1.
 
@@ -1366,7 +1421,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
 
  []
 
-<fig/Pr4.pdf, id=85, 370.38374pt x 281.05pt>
+<fig/Pr4.pdf, id=91, 370.38374pt x 281.05pt>
 File: fig/Pr4.pdf Graphic file (type pdf)
 <use fig/Pr4.pdf>
 Package pdftex.def Info: fig/Pr4.pdf  used on input line 3.
@@ -1384,7 +1439,7 @@ Package pdfscreen Warning: No overlay specified
 
 Package xcolor Warning: Incompatible color definition on input line 28.
 
-[5 <./fig/Pr4.pdf>] (05-pr5.tex
+[6 <./fig/Pr4.pdf>] (05-pr5.tex
 
 Package xcolor Warning: Incompatible color definition on input line 1.
 
@@ -1401,7 +1456,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--3
 
  []
 
-<fig/Pr5.pdf, id=96, 241.90375pt x 240.9pt>
+<fig/Pr5.pdf, id=102, 241.90375pt x 240.9pt>
 File: fig/Pr5.pdf Graphic file (type pdf)
 <use fig/Pr5.pdf>
 Package pdftex.def Info: fig/Pr5.pdf  used on input line 3.
@@ -1419,7 +1474,7 @@ Package pdfscreen Warning: No overlay specified
 
 Package xcolor Warning: Incompatible color definition on input line 29.
 
-[6 <./fig/Pr5.pdf>] (06-tab.tex
+[7 <./fig/Pr5.pdf>] (06-tab.tex
 
 Package xcolor Warning: Incompatible color definition on input line 1.
 
@@ -1431,10 +1486,10 @@ Package rerunfilecheck Info: File `00-projekt.out' has not changed.
 (rerunfilecheck)             Checksum: F6B845309D4F504862C1A4C8694194FB;485.
  ) 
 Here is how much of TeX's memory you used:
- 41328 strings out of 480235
- 1026540 string characters out of 2880541
- 1359454 words of memory out of 3000000
- 57335 multiletter control sequences out of 15000+200000
+ 41487 strings out of 480235
+ 1030223 string characters out of 2880541
+ 1364165 words of memory out of 3000000
+ 57493 multiletter control sequences out of 15000+200000
  555342 words of font info for 88 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  101i,15n,110p,440b,924s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1446,19 +1501,21 @@ pen/ec/dpi600\ecbx1095.pk> <C:\Users\Vojta\AppData\Local\MiKTeX\fonts/pk/ljfour
 /jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\Vojta\AppData\Local\MiKTeX\fonts/pk/
 ljfour/jknappen/ec/dpi600\ecrm1200.pk> <C:\Users\Vojta\AppData\Local\MiKTeX\fon
 ts/pk/ljfour/jknappen/ec/dpi600\ecrm1728.pk><C:/Users/Vojta/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Vojta/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Vojta/Ap
-pData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/
-Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C
-:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr1
-0.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmr6.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmr8.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on 00-projekt.pdf (6 pages, 230259 bytes).
+ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Vojta/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Vojta/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users
+/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><
+C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmm
+i9.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmr10.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmr6.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmr8.pfb><C:/Users/Vojta/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Vojta/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Vojta/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on 00-projekt.pdf (7 pages, 253175 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 13 named destinations out of 1000 (max. 500000)
+ 315 PDF objects out of 1000 (max. 8388607)
+ 14 named destinations out of 1000 (max. 500000)
  83 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -4,12 +4,16 @@
 
 
 
-\vspace*{1cm}
+\vspace*{0.5cm}
 
 \begin{multicols}{2}
 \let\clearpage\relax
 
-\noindent Přepočítám napěťový zdroj na zdroj proudový. \\
+\noindent Přepočítám napěťový zdroj na zdroj proudový a~odpory na vodivosti. \\
+$I_3 = \frac{U}{R_1} = \frac{135}{52} = \SI{2.5962}{\ampere}$ \\
+$G_1 = \frac{1}{R_1} = \si{{\frac{1}{52}}\siemens} \qquad \qquad G_2 = \frac{1}{R_2} = \si{{\frac{1}{42}}\siemens}$ \\
+$G_3 = \frac{1}{R_3} = \si{{\frac{1}{52}}\siemens} \qquad \qquad G_4 = \frac{1}{R_4} = \si{{\frac{1}{42}}\siemens}$ \\
+$G_5 = \frac{1}{R_5} = \si{{\frac{1}{21}}\siemens}$ \\
 Dostanu obvod: \hspace*{0.5cm} \vspace*{-0.82cm} $\xrightarrow{\hspace*{4.5cm}}$ \\
 \vspace*{0.4cm} \\ \\
 
@@ -17,7 +21,7 @@ Dostanu obvod: \hspace*{0.5cm} \vspace*{-0.82cm} $\xrightarrow{\hspace*{4.5cm}}$
 \centering
 \columnbreak
 
-\vspace*{0.3cm}
+%\vspace*{0.3cm}
 
 %%% 1. obvod %%%
 \ctikzset{bipoles/length=1cm, bipoles/thickness = 1}
@@ -26,21 +30,108 @@ Dostanu obvod: \hspace*{0.5cm} \vspace*{-0.82cm} $\xrightarrow{\hspace*{4.5cm}}$
 (0,0) -- (0,1.1) to node[circle, draw=black, inner sep=5pt, midway]{} (0,1.5) to node[circle, draw=black, inner sep=5pt, midway]{} (0,1.9) -- (0,3);
 \draw [-latex] (-0.55,1) to (-0.55,2);
 \draw (-0.4,1.4) node[label={[font=\footnotesize]left:$I_3$}]{};
-%\draw[line width=0.7pt,<-] (-0.4,1) arc (-30:30:1);
 \draw
 (0,3) to node[circle, fill, inner sep=1.5pt, at end]{} (1.5,3)
-to [resistor, l= $G_1$] (1.5,0) to node[circle, fill, inner sep=1.5pt, at start]{} (0,0)
+to [resistor, l_=$G_1$] (1.5,0) to node[circle, fill, inner sep=1.5pt, at start]{} (0,0)
 (1.5,3) to node[circle, fill, inner sep=1.5pt, at end, label={[font=\footnotesize]above:A}]{} (3,3)
-to [resistor, l= $G_2$] (3,0) to node[circle, fill, inner sep=1.5pt, at start]{} (1.5,0)
-(3,0) to [resistor, l= $G_4$] node[circle, fill, inner sep=1.5pt, at end]{} (7,0);
-\draw (7.5,0) node[label={[font=\footnotesize]below:C}]{};
-\draw (3,0) -- (3,-1) -- (4.55,-1) to node[circle, draw=black, inner sep=5pt, midway]{} (5,-1) to node[circle, draw=black, inner sep=5pt, midway]{} (5.45,-1) -- (7,-1) -- (7,0)
-;
+to [resistor, l_=$G_2$] (3,0) to node[circle, fill, inner sep=1.5pt, at start]{} (1.5,0)
+(3,0) to [resistor, l=$G_4$] node[circle, fill, inner sep=1.5pt, at end]{} (7,0);
+\draw (7.4,0.1) node[label={[font=\footnotesize]below:C}]{};
+
+\draw (3,0) -- (3,-1.6) -- (4.55,-1.6) to node[circle, draw=black, inner sep=5pt, midway]{}  (5,-1.6) to node[circle, draw=black, inner sep=5pt, midway]{} (5.45,-1.6) -- (7,-1.6) -- (7,0);
+\draw [-latex] (4.45,-2.1) to (5.55,-2.1);
+\draw (5,-2) node[label={[font=\footnotesize]below:$I_2$}]{};
+
+\draw (7,0) to [resistor, l_=$G_5$] (7,3) to [resistor, l_=$G_3$] (3,3)
+(7,3) to node[circle, fill, inner sep=1.5pt, at start, label={[font=\footnotesize]above:B}]{} (8.5,3);
+\draw (7,0) -- (8.5,0) -- (8.5,1.1) to node[circle, draw=black, inner sep=5pt, midway]{} (8.5,1.5) to node[circle, draw=black, inner sep=5pt, midway]{} (8.5,1.9) -- (8.5,3);
+\draw [-latex] (9.05,1) to (9.05,2);
+\draw (8.9,1.4) node[label={[font=\footnotesize]right:$I_1$}]{};
+% Ua
+\draw[-angle 60, line width=0.7pt] (3.1,2.9) arc (30:-30:2.65);
+\draw (3.2,1.5) node[label={[font=\footnotesize]right:$U_A$}]{};
+% Uc
+\draw[-angle 60, line width=0.7pt] (6.9,-0.1) arc (-69:-112:5);
+\draw (5.1,-0.25) node[label={[font=\footnotesize]below:$U_C$}]{};
+% Ub
+\draw[-angle 60, line width=0.7pt] (6.9,2.9) -- (3.1,0.1);
+\draw (5.65,2) node[label={[font=\footnotesize]below:$U_B$}]{};
 \end{circuitikz}
 \end{multicols}
 \let\clearpage\relax
 
-\noindent Poté už stačí pouze dosadit do vzorce: $I_{R3} = \frac{u_i}{R_3+R_i} = \frac{36,0476}{620+172,0952} = \SI{0,045509}{\ampere} = \underline{\underline{\SI{45,509}{\milli\ampere}}}$ \\
-Z toho pak: $U_{R3} = I_{R3}*R_3 = 0,045509*620 = \underline{\underline{\SI{28,216}{\volt}}}$ \\
+\noindent Sestavím rovnice uzlů: \quad A) $-I_3 + G_1 U_A+G_2 U_A+G_3 (U_A-U_B) = 0$ \\
+\hspace*{4.15cm} B) $-I_1 + G_5 (U_B-U_C) - G_3(U_A-U_B) = 0$ \\
+\hspace*{4.15cm} C) $I_1 - G_5 (U_B-U_C) + G_4 U_C - I_2 = 0$ \\
+
+\noindent Upravím rovnice uzlů: \quad A) $U_A (G_1+G_2+G_3) + U_B (-G_3) = I_3$ \\
+\hspace*{4.15cm} B) $U_A (-G_3) + U_B (G_5+G_3) + U_C (-G_5) = I_1$ \\
+\hspace*{4.15cm} C) $U_B (-G_5) + U_C (G_5 + G_4) = I_2 - I_1$ \\
+
+\noindent Přepíši je do maticového tvaru: \quad
+%matice 1
+$\begin{bmatrix}
+	G_1 + G_2 + G_3	&	-G_3		&	0 \\
+	-G_3 			&	G_5 + G_3    &	- G_5 \\
+	0			&	- G_5 		&	G_5 + G_4
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+	U_A \\
+	U_B \\
+	U_C
+\end{bmatrix}
+=
+\begin{bmatrix}
+	I_3 \\
+	I_1 \\
+	I_2 - I_1
+\end{bmatrix}$ \\ \\
+
+\noindent Dosadím hodnoty: \hspace*{0.9cm}
+% matice 2
+$\begin{bmatrix}
+	\frac{17}{273}	&	-\frac{1}{52}	&	0 \\
+	-\frac{1}{52} 	&	\frac{73}{1092}    	&	-\frac{1}{21} \\
+	0			&	-\frac{1}{21} 	&	\frac{1}{14}
+\end{bmatrix}
+\cdot
+\begin{bmatrix}
+	U_A \\
+	U_B \\
+	U_C
+\end{bmatrix}
+=
+\begin{bmatrix}
+	2.5962 \\
+	0.55 \\
+	0.1
+\end{bmatrix}$ \\
+%newpage
+\newpage
+\noindent Vypočítám determinanty pomocí Sarrusova pravidla: \\ \\
+% delta
+$\Delta =
+\begin{vmatrix}
+	\frac{17}{273}	&	-\frac{1}{52}	&	0 \\[5pt]
+	-\frac{1}{52} 	&	\frac{73}{1092}    	&	-\frac{1}{21} \\[5pt]
+	0			&	-\frac{1}{21} 	&	\frac{1}{14}
+\end{vmatrix}
+= 0.00029734 + 0 + 0 - 0 - \frac{17}{120393} - \frac{1}{37856} = 1.2971989 \cdot 10^{-4} = 0.0001297 \\
+%delta_1
+\Delta_1 =
+\begin{vmatrix}
+	2.5962	&	-\frac{1}{52}	&	0 \\[5pt]
+	0.55 		&	\frac{73}{1092}    	&	-\frac{1}{21} \\[5pt]
+	0.1		&	-\frac{1}{21} 	&	\frac{1}{14}
+\end{vmatrix}
+= 0.0123968 + 0 + \frac{1}{10920} - 0 - 0.0058871 + \frac{11}{14560} = 7.3567696 \cdot 10^{-3} = 0.0073567$ \\ \\
+
+\noindent Pomocí Cramerova pravidla vypočítám $U_A$: \quad $U_A = \frac{\Delta_1}{\Delta} = \frac{7.3567696 \cdot 10^{-3}}{1.2971989 \cdot 10^{-4}} = \SI{56.71273}{\volt}$ \\
+\noindent Z čehož potom: \hspace*{4.95cm} $U_{R2} = U_A = \underline{\underline{\SI{56.71273}{\volt}}}$ \\ \\
+\noindent Pomocí Ohmova zákona pak získám proud $I_{R2}$: \quad $I_{R2} = \frac{U_{R2}}{R_2} = \underline{\underline{\SI{1.35}{\ampere}}}$
+
+
+%$I_{R3} = \frac{u_i}{R_3+R_i} = \frac{36,0476}{620+172,0952} = \SI{0,045509}{\ampere} = \underline{\underline{\SI{45,509}{\milli\ampere}}}$
 
 \clearpage
